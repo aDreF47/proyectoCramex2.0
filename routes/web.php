@@ -8,3 +8,9 @@ Route::get('/api/carousel-images', [CarouselController::class, 'getImages']);
 Route::get('/carrusel', function () {
     return view('carrusel');
 });
+
+
+Route::get('/nosotros', function () {
+    return view('nosotros');
+});
+
