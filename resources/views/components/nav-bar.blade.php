@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <a class="navbar-brand" href="/carrusel">
-            <img src="/images/cramexlogo.png" alt="Logo" height="110">
+            <img src="/images/cramexlogo.png" alt="Logo" height="90">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,9 +9,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Inicio</a>
-                </li>
+
                 <li class="nav-item dropdown">
                     <a class="btn btn-matricula dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -71,10 +69,7 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Niveles
-                    </a>
+
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Nivel Inicial</a></li>
                         <li><a class="dropdown-item" href="#">Nivel Primaria</a></li>
@@ -140,7 +135,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Éxitos</a>
+                    <a class="nav-link" href="#">Novedades</a>
                 </li>
             </ul>
             <div class="d-flex align-items-center">
@@ -158,6 +153,8 @@
 
 <style>
     .navbar {
+        height: 100px;
+        min-height: 60px !important;
         background-color: #FFC000;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         position: fixed;
