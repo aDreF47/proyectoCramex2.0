@@ -222,7 +222,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="/carrusel">
-        <img src="/images/cramexlogo.png" alt="Logo" height="110">
+        <img src="/images/cramexlogo.png" alt="Logo" height="90">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -230,9 +230,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="btn btn-matricula dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
@@ -252,47 +249,13 @@
             Nosotros
             </a>
             <ul class="dropdown-menu">
-              <li class="dropdown-submenu">
                 <a class="dropdown-item" href="#">¿Quienes somos?</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Propuesta educativa</a></li>
-                  <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
-                  <li><a class="dropdown-item" href="#">Objetivos</a></li>
-                  <li><a class="dropdown-item" href="#">Palabras del director</a></li>
-                  <li><a class="dropdown-item" href="#">Himno de la institución</a></li>
-                  <li><a class="dropdown-item" href="#">Insignia de Cramex</a></li>
-                </ul>
-              </li>
-              <li class="dropdown-submenu">
-                <a class="dropdown-item" href="#">Programa Talentos</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Deportes</a></li>
-                  <li><a class="dropdown-item" href="#">Seleccion y Olimpiadas</a></li>
-                  <li><a class="dropdown-item" href="#">Primeros Puestos</a></li>
-                </ul>
-              </li>
-              <li class="dropdown-submenu">
-                <a class="dropdown-item" href="#">Novedades</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Revistas</a></li>
-                  <li><a class="dropdown-item" href="#">Noticias</a></li>
-                  <li><a class="dropdown-item" href="#">Galeria de Fotos</a></li>
-                  <li><a class="dropdown-item" href="#">Galeria de Videos</a></li>
-                  <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
-                  <li><a class="dropdown-item" href="#">En medios</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Niveles
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Nivel Inicial</a></li>
-              <li><a class="dropdown-item" href="#">Nivel Primaria</a></li>
-              <li><a class="dropdown-item" href="#">Nivel Secundaria</a></li>
+                <a class="dropdown-item" href="#">Propuesta educativa</a>
+                <a class="dropdown-item" href="#">Misión y Visión</a>
+                <a class="dropdown-item" href="#">Objetivos</a>
+                <a class="dropdown-item" href="#">Palabras del director</a>
+                <a class="dropdown-item" href="#">Himno de la institución</a>
+                <a class="dropdown-item" href="#">Insignia de Cramex</a>
             </ul>
           </li>
 
@@ -322,12 +285,7 @@
             </a>
             <ul class="dropdown-menu">
               <li class="dropdown-submenu">
-                <a class="dropdown-item" href="#">Servicios de Pago</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Pago de Matrícula</a></li>
-                  <li><a class="dropdown-item" href="#">Pago de Pensiones Mensuales</a></li>
-                  <li><a class="dropdown-item" href="#">Pago de uso de instalaciones</a></li>
-                </ul>
+                <a class="dropdown-item" href="#">Pago de uso de instalaciones</a>
               </li>
               <li class="dropdown-submenu">
                 <a class="dropdown-item" href="#">Beneficios Incluidos con la Matrícula</a>
@@ -348,8 +306,26 @@
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Éxitos</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Novedades
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="#">Programa Talentos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Deportes</a></li>
+                  <li><a class="dropdown-item" href="#">Seleccion y Olimpiadas</a></li>
+                  <li><a class="dropdown-item" href="#">Primeros Puestos</a></li>
+                </ul>
+              </li>
+              <a class="dropdown-item" href="#">Revistas</a>
+              <a class="dropdown-item" href="#">Noticias</a>
+              <a class="dropdown-item" href="#">Galeria de Fotos</a>
+              <a class="dropdown-item" href="#">Galeria de Videos</a>
+              <a class="dropdown-item" href="#">Redes Sociales</a>
+              <a class="dropdown-item" href="#">En medios</a>
+            </ul>
           </li>
         </ul>
         <div class="d-flex align-items-center">
@@ -357,8 +333,8 @@
             <i class="bi bi-telephone"> <img src="/images/telefono.png" alt="telefono" style="height: 20px;"> </i>
             0882 121
           </div>
-          <a href="#" class="btn btn-intranet me-2">Intranet</a>
-          <a href="#" class="btn btn-contacto">Contáctenos</a>
+          <a href="{{ url('/intranet') }}" class="btn btn-intranet me-2">Intranet</a>
+          <a href="{{ url('/contactenos') }}" class="btn btn-contacto">Contáctenos</a>
         </div>
       </div>
     </div>
